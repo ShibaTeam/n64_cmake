@@ -30,15 +30,6 @@ if(NOT CMAKE_ASM_COMPILER)
     SET_COMPILER_VAR(ASM-ATT_COMPILER as)
 endif()
 
-include_directories(
-	${TOOLCHAIN_PREFIX}/mips64-elf/include
-	${TOOLCHAIN_PREFIX}/include
-)
-
-link_directories(
-	${TOOLCHAIN_PREFIX}/lib
-	${TOOLCHAIN_PREFIX}/mips64-elf/lib
-)
 
 set(CMAKE_FIND_ROOT_PATH_MODE_PROGRAM NEVER)
 set(CMAKE_FIND_ROOT_PATH_MODE_LIBRARY ONLY)
